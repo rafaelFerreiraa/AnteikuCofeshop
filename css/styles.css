@@ -1,0 +1,734 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+/* copyright by rafael */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.top {
+  background-image: url("../images/coffee-beans.svg");
+  background-repeat: no-repeat;
+  background-size: 45rem;
+  background-color: #200c00;
+}
+
+header {
+  padding: 2rem;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-container {
+  margin-left: 2rem;
+}
+.logo {
+  filter: drop-shadow(5px 5px 4px black);
+  transition: 0.3s;
+}
+.logo:hover {
+  transform: translateY(-3px);
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 4rem;
+  padding: 1rem;
+  margin-right: 4rem;
+}
+
+.list-item {
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  transition: 0.3s;
+}
+
+
+.list-item:hover {
+  transform: translateY(-3px);
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu a:hover {
+  color: #845f44;
+}
+
+.overlay {
+  display: none;
+}
+
+.overlay-content {
+  display: none;
+}
+
+.overlay a {
+  display: none;
+}
+
+.hb {
+  display: none;
+}
+
+.close-btn {
+  font-size: 30px;
+}
+
+#sec-1 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+  gap: 15rem;
+  min-height: 70vh;
+  box-shadow: 0px 5px 5px black;
+}
+
+#hero-text {
+  margin-top: 4rem;
+  text-shadow: 2px 2px 2px black;
+}
+
+#hero-text h1 {
+  font-stretch: extra-expanded;
+  font-size: 4rem;
+  font-weight: bold;
+  max-width: 38rem;
+  color: white;
+}
+#hero-text p {
+  font-size: 1.4rem;
+  max-width: 35rem;
+  color: white;
+}
+
+#hero-img {
+  max-width: 50rem;
+  filter: drop-shadow(0 -6mm 4mm black);
+}
+#sec-2-title {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 5rem;
+}
+#sec-2-title p {
+  font-size: 1.2rem;
+  color: gray;
+}
+
+#shop {
+  display: flex;
+  justify-content: center;
+  gap: 15rem;
+  padding: 3rem;
+}
+
+.coffee-img-container {
+  text-align: center;
+}
+.coffee-card-text {
+  display: flex;
+  flex-direction: column;
+}
+.c-price {
+  font-weight: 700;
+}
+.c-title {
+  font-size: 1.8rem;
+}
+
+.c-desc {
+  max-width: 20rem;
+  color: gray;
+}
+
+.delivery-btn-container {
+  text-align: center;
+  padding: 1rem;
+  transition: 0.3s;
+}
+
+#coffee-Btn1,
+#coffee-Btn2,
+#coffee-Btn3 {
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #845f44;
+  border: 0;
+  border-radius: 0.3rem;
+  padding: 1.3rem;
+  min-width: 10rem;
+  transition: 0.3s;
+}
+
+#coffee-Btn1:hover,
+#coffee-Btn2:hover,
+#coffee-Btn3:hover {
+  background-color: #200c00;
+  cursor: pointer;
+}
+
+#sec-3-title {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 3rem;
+}
+#sec-3-title p {
+  color: gray;
+  font-size: 1.2rem;
+}
+
+#grid-container {
+  display: grid;
+  justify-content: space-evenly;
+  justify-items: center;
+}
+
+#grid-pics {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.pics:nth-child(-n+6){
+  transition: all .5s;
+}
+.pics {
+  padding: 0.5rem;
+}
+
+.pics:nth-child(-n+6):hover{
+  transform: scale(1.1);
+  
+}
+
+.pic-5 {
+  margin-top: -6.25rem;
+  padding: 0.5rem;
+}
+.pic-6 {
+  grid-column-start: 3;
+  padding: 0.5rem;
+}
+
+hr {
+  text-align: center;
+  border: 1px solid black;
+  width: 20rem;
+}
+#lm {
+  margin: 1rem 0 3rem 0;
+}
+.lm-box{
+  width: fit-content;
+  text-align: center;
+  margin-left:auto ;
+  margin-right: auto;
+}
+.lm-text {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #845f44;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.lm-text:hover {
+  color: #200c00;
+}
+#lm p:hover {
+  color: #200c00;
+}
+#sec-4 {
+  background-image: url("../images/Follow-us.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 70vh;
+  box-shadow: 0px 0px 5px black;
+  
+}
+
+#sec-4-title {
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.follow {
+  color: #845f44;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1rem;
+}
+.inquiry {
+  color: white;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 3.5rem;
+}
+
+#telephone-link1 img {
+  width: fit-content;
+  height: fit-content;
+  padding-top: 0.4rem;
+}
+
+#telephone-link1,
+#email-link1 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 1rem;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+#email-link1 img {
+  width: fit-content;
+  height: fit-content;
+  padding-top: 0.7rem;
+}
+
+#telephone-link1:hover,
+#email-link1:hover {
+  color: #845f44;
+}
+
+#social-1 {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-content: center;
+  margin: 4rem;
+}
+
+#sec-5-title {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 3rem;
+}
+#sec-5-title p {
+  color: gray;
+  font-size: 1.2rem;
+}
+
+#cards {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 2rem;
+  padding: 0 2rem 2rem 2rem;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card {
+  max-width: 25rem;
+  background-color: white;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.card img {
+  border-radius: 1.5rem 1.5rem 0 0;
+  width: 100%;
+}
+
+.card-text {
+  padding: 2rem;
+}
+
+.card-text h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+.card-text p {
+  padding-bottom: 1rem;
+}
+.more-link {
+  color: #845f44;
+  font-weight: 600;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+.more-link:hover {
+  color: #200c00;
+}
+#lm-2 {
+  margin: 4rem 0 3rem 0;
+}
+#lm-2 p:hover {
+  color: #200c00;
+}
+
+footer {
+  background-color: #0d0402;
+  background-image: url("../images/coffee-beans.svg");
+  box-shadow: 10px 10px px black;
+}
+#footer-container {
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-content: center;
+  gap: 10rem;
+  padding: 1.5rem;
+}
+#footer-container h4 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+#footer-col1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 1.5rem 1rem 1rem 1rem;
+}
+#footer-col1 img {
+  text-align: center;
+}
+#footer-col1 p {
+  margin-bottom: 0;
+}
+
+.cat-items,
+.info-items,
+.foot-con {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.cat-items a:hover,
+.info-items a:hover,
+.foot-con a:hover {
+  color: #845f44;
+  text-decoration: underline;
+}
+
+#social-2 {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-content: center;
+  padding: 1rem;
+  text-shadow: (10px 5px 4px black);
+}
+#social-2 img {
+  filter: drop-shadow(10px 5px 4px black);
+}
+
+.copyright{
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  margin: 0;
+}
+
+@media only screen and (max-width: 1660px) {
+  #sec-1 {
+    gap: 1rem;
+    min-height: 65vh;
+  }
+  #hero-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+  }
+  #hero-text p {
+    font-size: 1rem;
+
+    color: white;
+  }
+  #hero-img {
+    max-width: 30rem;
+    padding-top: 3.5rem;
+  }
+  #shop {
+    gap: 3rem;
+  }
+  .pics {
+    width: 15rem;
+  }
+  .pic-5 {
+    margin-top: -4.25rem;
+  }
+}
+
+@media only screen and (max-width: 1103px) {
+  .logo-container {
+    margin: 0;
+  }
+  .menu {
+    gap: 2rem;
+    margin: 0rem;
+  }
+  #sec-1 {
+    min-height: 40vh;
+  }
+  #sec-1 {
+    flex-wrap: wrap;
+  }
+  #hero-text {
+    margin-top: 0;
+  }
+
+  #hero-text h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  #hero-text p {
+    font-size: 1.4rem;
+    text-align: center;
+    padding-left: 20px;
+  }
+  #hero-img {
+    max-width: 20rem;
+    padding-top: 0;
+    padding-left: 3rem;
+  }
+  #sec-2-title {
+    padding: 5rem 0 1rem 1rem;
+  }
+  #shop {
+    flex-direction: column;
+  }
+  #sec-4 {
+    min-height: 50vh;
+  }
+  .coffee-img-container img {
+    width: 12rem;
+  }
+  .coffee-card-text {
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .c-desc {
+    max-width: none;
+  }
+  .pics {
+    width: 12rem;
+    padding: 0.2rem;
+  }
+  .pic-5 {
+    margin-top: -3.2rem;
+  }
+  #sec-4 {
+    min-height: 70vh;
+  }
+  #cards {
+    flex-direction: column;
+    padding: 1rem 8rem;
+  }
+  .card {
+    max-width: none;
+  }
+  #footer-container {
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+}
+
+@media only screen and (max-width: 725px) {
+  .menu {
+    display: none;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-around;
+    gap: 2rem;
+    padding: 1rem;
+  }
+  #myNav {
+    font-family: "Josefin Sans", sans-serif;
+  }
+  .overlay {
+    display: block;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0%;
+    background-color: #200c00;
+    opacity: 85%;
+    overflow-x: hidden;
+    transition: 0.1s;
+  }
+
+  .overlay-content {
+    display: block;
+    position: relative;
+    top: 0%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .overlay a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: white;
+    display: block;
+    transition: 0.1s;
+  }
+
+  .overlay a:hover,
+  .overlay a:focus {
+    color: #845f44;
+  }
+
+  .hb {
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    margin-top: 1rem;
+  }
+
+  .close-btn {
+    display: block;
+    font-size: 30px;
+  }
+
+  #hero-text h1 {
+    font-size: 2rem;
+    padding: 0 1rem;
+  }
+  #hero-text p {
+    font-size: 0.9rem;
+    padding: 0 1rem;
+  }
+  .pics {
+    width: 8rem;
+    padding: 0.2rem;
+  }
+  .pic-5 {
+    margin-top: -2.2rem;
+  }
+  #sec-4 {
+    min-height: 65vh;
+  }
+  .follow {
+    font-size: 3rem;
+  }
+  .inquiry {
+    font-size: 1.5rem;
+  }
+
+  #telephone-link1 img {
+    padding-top: 0rem;
+  }
+
+  #telephone-link1,
+  #email-link1 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 0.5rem;
+    color: white;
+    font-size: 1.2rem;
+
+    margin-bottom: 1rem;
+  }
+
+  #email-link1 img {
+    width: fit-content;
+    height: fit-content;
+    padding-top: 0.7rem;
+  }
+
+  #cards {
+    flex-direction: column;
+    padding: 1rem 3rem;
+  }
+  #footer-container {
+    justify-content: space-between;
+  }
+
+  #footer-col1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    padding-top: 0.5rem;
+  }
+
+  #footer-container h4 {
+    font-size: 0.9rem;
+  }
+
+  #footer-container a,
+  #footer-container p {
+    font-size: 0.8rem;
+  }
+  #footer-col1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 0;
+  }
+
+  #social-2 {
+    gap: 0.5rem;
+  }
+  .logo-foot-img {
+    width: 7rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #hero-img {
+    max-width: 15rem;
+    padding-top: 0;
+    padding-left: 2rem;
+  }
+  .pics {
+    width: 5rem;
+    padding: 0.2rem;
+  }
+  .pic-5 {
+    margin-top: -1.35rem;
+  }
+  hr {
+    text-align: center;
+    border: 1px solid black;
+    width: 10rem;
+  }
+  #footer-container h4 {
+    font-size: 0.8rem;
+  }
+
+  #footer-container a,
+  #footer-container p {
+    font-size: 0.8rem;
+  }
+}
+/* copyright by rafael */

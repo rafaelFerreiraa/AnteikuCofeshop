@@ -1,0 +1,485 @@
+/* copyright by rafael */
+
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  header {
+    padding: 1.5rem;
+    background-color: #200c00;
+    background-image: url("../images/coffee-beans.svg");
+  
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .overlay {
+    display: none;
+  }
+  
+  .overlay-content {
+    display: none;
+  }
+  
+  .overlay a {
+    display: none;
+  }
+  
+  .hb {
+    display: none;
+  }
+  
+  .close-btn {
+    font-size: 30px;
+  }
+  .r-title{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-family:  "Josefin Sans", sans-serif !important ; 
+    font-size: 2.5rem;
+    color: white;
+    text-shadow:(10px 10px 20px black);
+  }
+  .logo-container {
+    margin-left: 2rem;
+  }
+  .logo {
+    filter: drop-shadow(5px 5px 4px black);
+    transition: 0.3s;
+    
+  }
+  .logo:hover {
+    transform: translateY(-3px);
+  }
+  
+  .menu {
+    display: flex;
+    list-style: none;
+    gap: 4rem;
+    padding: 1rem;
+    margin-right: 5rem;
+  }
+  .res-item a{
+    color: #845f44;
+  }
+
+  .menu a:hover {
+    color: #845f44;
+  }
+  
+  .list-item {
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    transition: 0.3s;
+  }
+  
+  .list-item:hover {
+    transform: translateY(-3px);
+  }
+
+  .sec-1{
+    background-image: url("../images/beans-1.webp");
+    background-size: cover;
+    filter: hue-rotate(15deg);
+    background-repeat: no-repeat;
+    
+    
+    
+  }
+  
+  .form-container{
+    filter: hue-rotate(-15deg);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 5rem 5rem 5rem 5rem;
+    
+    
+  }
+  form{
+    background-color: #200c00;
+    background-image: url("../images/coffee-beans.svg");
+    background-size: 50%;
+    padding: 0rem 10rem 2rem 10rem ;
+    display: flex;
+    flex-direction: column;
+    border-radius: .5rem;
+    gap: 3rem;
+    box-shadow: 5px 10px 10px black;
+
+    
+    
+  }
+
+  .input-1-2, .input-3-4{
+    display: flex;
+    padding: .5rem 5rem;
+    gap: 5rem;
+    
+  }
+  
+  #fname, #lname, #email, #phone{
+    font-family: "Josefin Sans", sans-serif;
+    border-radius: .3rem;
+    font-size: 1.3rem;
+    width: 25rem;
+    height: 3rem;
+    box-shadow: 2px 3px 3px black;
+    border-color: transparent;
+    outline-color: transparent;
+  }
+  .text-box-container{
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+  }
+
+  #text-box{
+    font-size: 1.3rem;
+    font-family: "Josefin Sans", sans-serif;
+    border-radius: .3rem;
+    box-shadow: 2px 3px 3px black;
+
+  }
+
+  .sub-btn-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .sub-btn{
+    font-size: 1.3rem;
+    font-family: "Josefin Sans", sans-serif;
+    padding: 1.2rem 4rem;
+    background-color: #845f44;
+    border-color: transparent;
+    border-radius: .2rem;
+    color: white;
+    box-shadow: 2px 3px 3px black;
+
+  }
+  .sub-btn:hover{
+    background-color:#361601;;
+
+  }
+
+footer {
+    background-color: #0d0402;
+    background-image: url("../images/coffee-beans.svg");
+  }
+  #footer-container {
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-content: center;
+    gap: 10rem;
+    padding: 1.5rem;
+  }
+  #footer-container h4 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+  #footer-col1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 1.5rem 1rem 1rem 1rem;
+  }
+  #footer-col1 img {
+    text-align: center;
+  }
+  #footer-col1 p {
+    margin-bottom: 0;
+  }
+  
+  .cat-items,
+  .info-items,
+  .foot-con {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .cat-items a:hover,
+  .info-items a:hover,
+  .foot-con a:hover {
+    color: #845f44;
+    text-decoration: underline;
+  }
+  
+  #social-2 {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-content: center;
+    padding: 1rem;
+    text-shadow: (10px 5px 4px black);
+  }
+  #social-2 img {
+    filter: drop-shadow(10px 5px 4px black);
+  }
+  .copyright{
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin: 0;
+  }
+  
+  @media only screen and (max-width: 1420px){
+ 
+    .menu {
+      margin-right: 2rem;
+    }
+    form{
+      padding: 2.5rem 1rem ;
+      
+      
+      
+    }
+  }
+
+  @media only screen and (max-width: 1125px){
+    .input-1-2, .input-3-4{
+     
+      padding: .5rem 0rem;
+      
+      
+    }
+
+  }
+
+  @media only screen and (max-width: 970px){
+    form{
+      gap: 2rem;
+      padding: 2rem 3rem;
+    }
+    .input-1-2, .input-3-4{
+      display: flex;
+      flex-direction: column;
+      margin-left: auto;
+      margin-right: auto;
+      gap: 3rem;
+      
+    }
+    #fname, #lname, #email, #phone{
+     
+      width: 30rem;
+      height: 2rem;
+      padding: 1rem;
+      
+    }
+    .text-box-container{
+      padding-top: 2rem;
+    }
+    #text-box{
+      width: 32rem;
+      height: 10rem;
+    }
+   
+
+  }
+  @media only screen and (max-width: 900px){
+  .r-title{
+    
+    font-size: 2rem;
+  }
+  #footer-container {
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+  
+  
+
+}
+
+@media only screen and (max-width: 725px){
+  header{
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    align-content: center;
+  }
+  .logo-container {
+    margin-left: -2rem;
+  }
+  .r-title{
+    font-size: 1.2rem;
+    
+    
+  }
+  .menu {
+    display: none;
+  }
+  #myNav {
+    font-family: "Josefin Sans", sans-serif;
+  }
+  .overlay {
+    display: block;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0%;
+    background-color: #200c00;
+    opacity: 85%;
+    overflow-x: hidden;
+    transition: 0.1s;
+  }
+
+  .overlay-content {
+    display: block;
+    position: relative;
+    top: 0%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .overlay a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: white;
+    display: block;
+    transition: 0.1s;
+  }
+
+  .overlay a:hover,
+  .overlay a:focus {
+    color: #845f44;
+  }
+
+  .hb {
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    margin-top: .5rem;
+  }
+
+  .close-btn {
+    display: block;
+    font-size: 30px;
+  }
+
+  form{
+    gap: 2rem;
+    padding: 1rem 1rem;
+  }
+  #fname, #lname, #email, #phone{
+     
+    width: 20rem;
+    height: 2rem;
+    padding: 1rem;
+    
+  }
+  .text-box-container{
+    padding-top: 2rem;
+  }
+  #text-box{
+    width: 22rem;
+    height: 10rem;
+  }
+  #footer-container {
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+
+  #footer-col1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    padding-top: 0.5rem;
+  }
+
+  #footer-container h4 {
+    font-size: 0.9rem;
+  }
+
+  #footer-container a,
+  #footer-container p {
+    font-size: 0.8rem;
+  }
+  #footer-col1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 0;
+  }
+
+  #social-2 {
+    gap: 0.5rem;
+  }
+  .logo-foot-img {
+    width: 7rem;
+  }
+
+
+}
+
+@media only screen and (max-width: 500px){
+  #fname, #lname, #email, #phone{
+     
+    width: 20rem;
+    height: 2rem;
+    padding: 1rem;
+    
+  }
+  .text-box-container{
+    padding-top: 2rem;
+  }
+  #text-box{
+    width: 22rem;
+    height: 10rem;
+  }
+
+}
+@media only screen and (max-width: 400px){
+  header {
+   
+    gap: 6rem;
+    
+}
+  #fname, #lname, #email, #phone{
+     
+    width: 15rem;
+    height: 2rem;
+    padding: 1rem;
+    
+  }
+  .text-box-container{
+    padding-top: 2rem;
+  }
+  #text-box{
+    width: 15rem;
+    height: 10rem;
+  }
+
+}
+/* copyright by rafael */

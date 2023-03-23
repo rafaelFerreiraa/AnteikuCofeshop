@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles-2.css">
+    <link rel="preload" as="image" href="images/beans-1.webp" type="image/webp">
+    <title>Anteiku - Reservations</title>
+</head>
+<body onload="document.form1.email.focus()">
+    <header>
+        <nav>
+            <div class="logo-container">
+                <a href="index.html"><img src="images/logo.png" class="logo" alt="logo"></a>
+            </div>
+            
+            <ul class="menu">
+               <li class="list-item"><a href="index.html">Home</a></li>
+               <li class="list-item res-item "><a href="reservations.html">Reservations</a></li>
+            </ul>
+        </nav>
+         <div id="myNav" class="overlay">
+            <div id="close">
+           <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+           </div>
+           <div class="overlay-content">
+             <a onclick="closeNav()" href="index.html">Home</a>
+             <a onclick="closeNav()" href="reservations.html">Reservations</a>
+           </div>
+         </div>
+         <div class="hb">
+            <span onclick="openNav()">&#9776;</span>
+         </div>
+       </header>
+       <main>
+        <section class="sec-1">
+          
+            <div class="form-container">
+                
+                <form name="form1" action="https://formspree.io/f/mlezznlw" method="post">
+                    <div class="r-title">
+                        <h1>Reservations</h1>
+                    </div>
+                    <div class="input-1-2">
+                       <input type="text" id="fname" name="fname" placeholder="First Name" required>
+                       <input type="text" id="lname" name="lname" placeholder="Last Name" required>
+                    </div>
+                    <div class="input-3-4">
+                       <input type="email" id="email" name="email" placeholder="Email" required>
+                       <input type="phone" id="phone" name="phone" placeholder="Phone Number" required>
+                    </div>
+                    <div class="text-box-container">
+                       <textarea id="text-box" name="message" cols="88" rows="5" placeholder="Message" required></textarea>
+                    </div>
+                    <div class="sub-btn-container">
+                       <button class="sub-btn" type="submit" onclick="validateEmail(document.form1.email)">Submit</button>
+                    </div>
+                 </form>
+        
+        </section>
+       </main>
+       <footer>
+        <div id="footer-container">
+            <div id="footer-col1">
+                <div class="logo-foot">
+                    <img src="images/logo.png" class="logo logo-foot-img" alt="logo">
+                </div>
+                <div class="foot-con">
+                <p>Creating a catchy tagline<br>coffee shop business growth.</p>
+                
+                    <div class="telphone-link2">
+                    <a href="https://github.com/rafaelFerreiraa"><img class="tele-img-foot" src="images/telephone.png" alt="telephone"></a>
+                    <a href="https://github.com/rafaelFerreiraa">+1 (123)-123-4567</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="footer-col2">
+                <div class="cat-foot">
+                   <h4>Categories</h4>
+                </div>
+                <div class="cat-items">
+                <a href="https://github.com/rafaelFerreiraa">Ashley Szekeres Art</a>
+                <a href="https://github.com/rafaelFerreiraa">Merchandise</a>
+                <a href="https://github.com/rafaelFerreiraa">Gift Certificates</a>
+                </div>
+            </div>
+
+            <div id="footer-col3">
+                <div class="info-foot">
+                   <h4>Information</h4>
+                </div>
+                <div class="info-items">
+                <a href="https://github.com/rafaelFerreiraa">Coffee Beans</a>
+                <a href="https://github.com/rafaelFerreiraa">Contact Us</a>
+                <a href="https://github.com/rafaelFerreiraa">News</a>
+                </div>
+            </div>
+        </div>
+         <div id="social-2" >
+                    <a href="https://github.com/rafaelFerreiraa"><img src="images/Twitter.png" alt="Twitter"></a>
+                    <a href="https://github.com/rafaelFerreiraa"><img src="images/Facebook.png" alt="Facebook"></a>
+                    <a href="https://github.com/rafaelFerreiraa"><img src="images/Instagram.png" alt="Instagram"></a>
+                    <a href="https://github.com/rafaelFerreiraa"><img src="images/Linkdin.png" alt="LinkdIn"></a>
+                </div>
+                <div class="copyright-box">
+                    <p class="copyright">&copy; 2022 Developed by Rafael Ferreira</p>
+                 </div>  
+        
+
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/validateEmail.js"></script>
+    <script src="js/redirectPage.js"></script>
+            
+    
+</body>
+</html>
